@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { HashLoader } from "react-spinners";
 
 const PaymentPage = ({ username }) => {
-    document.title = "Support - " + username
+    // document.title = "Support - " + username
 
     const [loading, setLoading] = useState(true);
     const [paymentform, setPaymentform] = useState({});
