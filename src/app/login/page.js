@@ -7,7 +7,10 @@ import { ToastContainer, toast, Slide } from 'react-toastify';
 const Login = () => {
     const { data: session } = useSession()
     const router = useRouter()
-    document.title = "Login - Thanks-Chat"
+    useEffect(() => {
+        // Set the document title inside useEffect to ensure it runs on the client
+        document.title = "Login - Thanks-Chat"
+    }, []);
 
     useEffect(() => {
         if (session) {
