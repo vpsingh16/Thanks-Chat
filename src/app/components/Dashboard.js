@@ -23,7 +23,7 @@ const Dashboard = () => {
             if (user) {
                 setForm(user)
                 // Giving Title to Page
-                document.title = "Dashboard - " + session.user.name
+                // document.title = "Dashboard - " + session.user.name
             } else {
                 toast.error('User data not found', {
                     position: "bottom-right",
@@ -33,7 +33,7 @@ const Dashboard = () => {
                     theme: "dark",
                     transition: Slide
                 })
-                document.title = "Dashboard - User Not Found"
+                // document.title = "Dashboard - User Not Found"
             }
         } catch (error) {
             console.error('Error fetching user data:', error)
